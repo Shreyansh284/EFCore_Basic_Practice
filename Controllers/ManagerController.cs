@@ -42,18 +42,30 @@ namespace WebApiEFCore.Controllers
         [HttpPatch("EditManager/{managerId}")]
         public async Task<IActionResult> Edit([FromBody]Manager managerDetail, [FromRoute] int managerId)
         {
+
             var manager = await context.Managers.FindAsync(managerId);
+            if(manager!=null)
+            {
             manager.ManagerName = managerDetail.ManagerName;
-           await context.SaveChangesAsync();
+            await context.SaveChangesAsync();
             return Ok();
-        }
+
+            }
+            return StatusCode(400, "Manager Not Found.");
+        } 
+
         [HttpDelete("DeleteManager/{managerId}")]
         public async Task<IActionResult> Delete(int managerId)
         {
             var manager = await context.Managers.FindAsync(managerId);
+            if(manager!=null)
+            {
+
             context.Remove(manager);
             await context.SaveChangesAsync();
             return Ok();
+            }
+            return StatusCode(400, "Manager Not Found.");
         }
         }
 }

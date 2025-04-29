@@ -90,6 +90,57 @@
         }
       }
     },
+    "/EditEmployeeManager/{managerId}/{employeeId}": {
+      "patch": {
+        "tags": [
+          "Employee"
+        ],
+        "parameters": [
+          {
+            "name": "managerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "employeeId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Employee"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/DeleteEmployee/{employeeId}": {
       "delete": {
         "tags": [
@@ -120,107 +171,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "EmployeeProjectId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "EmployeeId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Employee.EmployeeId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Employee.EmployeeName": {
-                    "type": "string"
-                  },
-                  "Employee.ManagerId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Employee.Manager.ManagerId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Employee.Manager.ManagerName": {
-                    "type": "string"
-                  },
-                  "Employee.Manager.Employees": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/Employee"
-                    }
-                  },
-                  "Employee.EmployeeProjects": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/EmployeeProject"
-                    }
-                  },
-                  "ProjectId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Project.ProjectId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Project.ProjectName": {
-                    "type": "string"
-                  },
-                  "Project.EmployeeProjects": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/EmployeeProject"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "EmployeeProjectId": {
-                  "style": "form"
-                },
-                "EmployeeId": {
-                  "style": "form"
-                },
-                "Employee.EmployeeId": {
-                  "style": "form"
-                },
-                "Employee.EmployeeName": {
-                  "style": "form"
-                },
-                "Employee.ManagerId": {
-                  "style": "form"
-                },
-                "Employee.Manager.ManagerId": {
-                  "style": "form"
-                },
-                "Employee.Manager.ManagerName": {
-                  "style": "form"
-                },
-                "Employee.Manager.Employees": {
-                  "style": "form"
-                },
-                "Employee.EmployeeProjects": {
-                  "style": "form"
-                },
-                "ProjectId": {
-                  "style": "form"
-                },
-                "Project.ProjectId": {
-                  "style": "form"
-                },
-                "Project.ProjectName": {
-                  "style": "form"
-                },
-                "Project.EmployeeProjects": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/EmployeeProject"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmployeeProject"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmployeeProject"
               }
             }
           }
@@ -251,35 +214,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "ManagerId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "ManagerName": {
-                    "type": "string"
-                  },
-                  "Employees": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/Employee"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "ManagerId": {
-                  "style": "form"
-                },
-                "ManagerName": {
-                  "style": "form"
-                },
-                "Employees": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/Manager"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Manager"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Manager"
               }
             }
           }
@@ -309,35 +256,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "ManagerId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "ManagerName": {
-                    "type": "string"
-                  },
-                  "Employees": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/Employee"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "ManagerId": {
-                  "style": "form"
-                },
-                "ManagerName": {
-                  "style": "form"
-                },
-                "Employees": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/Manager"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Manager"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Manager"
               }
             }
           }
@@ -391,35 +322,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "ProjectId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "ProjectName": {
-                    "type": "string"
-                  },
-                  "EmployeeProjects": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/EmployeeProject"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "ProjectId": {
-                  "style": "form"
-                },
-                "ProjectName": {
-                  "style": "form"
-                },
-                "EmployeeProjects": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/Project"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
               }
             }
           }
@@ -449,35 +364,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "ProjectId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "ProjectName": {
-                    "type": "string"
-                  },
-                  "EmployeeProjects": {
-                    "type": "array",
-                    "items": {
-                      "$ref": "#/components/schemas/EmployeeProject"
-                    }
-                  }
-                }
-              },
-              "encoding": {
-                "ProjectId": {
-                  "style": "form"
-                },
-                "ProjectName": {
-                  "style": "form"
-                },
-                "EmployeeProjects": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/Project"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Project"
               }
             }
           }
@@ -586,6 +485,34 @@
           "projectId": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Manager": {
+        "type": "object",
+        "properties": {
+          "managerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "managerName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "projectId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "projectName": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

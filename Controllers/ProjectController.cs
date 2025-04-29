@@ -48,17 +48,27 @@ namespace WebApiEFCore.Controllers
         public async Task<IActionResult> Edit([FromRoute] int projectId,[FromBody] Project projectDetail)
         {
             var project = await context.Projects.FindAsync(projectId);
+            if(project!=null)
+            {
+
             project.ProjectName = projectDetail.ProjectName;
             await context.SaveChangesAsync();
             return Ok();
+            }
+            return StatusCode(400, "Project Not Found.");
         }
         [HttpDelete("DeleteProject/{projectId}")]
         public async Task<IActionResult> Delete(int projectId)
         {
             var project =await context.Projects.FindAsync(projectId);
+            if(project!=null)
+            {
+
             context.Remove(project);
             await context.SaveChangesAsync();
             return Ok();
+            }
+            return StatusCode(400, "Project Not Found.");
         }
     }
 }
