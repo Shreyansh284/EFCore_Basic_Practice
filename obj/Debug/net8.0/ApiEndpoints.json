@@ -8,39 +8,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "EmployeeId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "EmployeeName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "ManagerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Manager.ManagerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Manager.ManagerName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Manager.Employees",
-        "Type": "System.Collections.Generic.ICollection\u00601[[WebApiInEfCore.Models.Employee, WebApiEFCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "EmployeeProjects",
-        "Type": "System.Collections.Generic.ICollection\u00601[[WebApiInEfCore.Models.EmployeeProject, WebApiEFCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
+        "Name": "employee",
+        "Type": "WebApiInEfCore.Models.Employee",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -192,59 +162,108 @@
   {
     "ContainingType": "WebApiEFCore.Controllers.ManagerController",
     "Method": "Delete",
-    "RelativePath": "DeleteManager",
+    "RelativePath": "DeleteManager/{managerId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "managerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "WebApiEFCore.Controllers.ProjectController",
     "Method": "Delete",
-    "RelativePath": "DeleteProject",
+    "RelativePath": "DeleteProject/{projectId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
     "ContainingType": "WebApiEFCore.Controllers.EmployeeController",
     "Method": "Edit",
-    "RelativePath": "EditEmployee",
+    "RelativePath": "EditEmployee/{employeeId}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "EmployeeId",
+        "Name": "employeeId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
-        "Name": "EmployeeName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
+        "Name": "employeeDetail",
+        "Type": "WebApiInEfCore.Models.Employee",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiEFCore.Controllers.ManagerController",
+    "Method": "Edit",
+    "RelativePath": "EditManager/{managerId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
         "Name": "ManagerId",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "Manager.ManagerId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Manager.ManagerName",
+        "Name": "ManagerName",
         "Type": "System.String",
         "IsRequired": false
       },
       {
-        "Name": "Manager.Employees",
+        "Name": "Employees",
         "Type": "System.Collections.Generic.ICollection\u00601[[WebApiInEfCore.Models.Employee, WebApiEFCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "managerId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApiEFCore.Controllers.ProjectController",
+    "Method": "Edit",
+    "RelativePath": "EditProject/{projectId}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ProjectId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ProjectName",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -256,39 +275,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApiEFCore.Controllers.ManagerController",
-    "Method": "Edit",
-    "RelativePath": "EditManager",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiEFCore.Controllers.ProjectController",
-    "Method": "Edit",
-    "RelativePath": "EditProject",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "WebApiEFCore.Controllers.EmployeeController",
     "Method": "Index",
     "RelativePath": "EmployeeDetail",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebApiEFCore.Controllers.EmployeesProjectsController",
-    "Method": "Index",
-    "RelativePath": "EmployeesProjectsDetail",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

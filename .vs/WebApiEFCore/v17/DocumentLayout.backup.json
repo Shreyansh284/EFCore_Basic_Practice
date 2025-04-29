@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "D:\\Internship\\WebApiEFCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:models\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\models\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:models\\employeeproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\controllers\\employeesprojectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:controllers\\employeesprojectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\migrations\\20250428092843_secondchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:migrations\\20250428092843_secondchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|solutionrelative:models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9878C394-1583-43D0-BD1A-1A4ACE8FD202}|WebApiEFCore.csproj|d:\\internship\\webapiefcore\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -62,63 +78,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProjectController.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "Controllers\\ProjectController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA1wB4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:11:05.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "EmployeesProjectsController.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\EmployeesProjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesProjectsController.cs",
               "ToolTip": "D:\\Internship\\WebApiEFCore\\Controllers\\EmployeesProjectsController.cs",
               "RelativeToolTip": "Controllers\\EmployeesProjectsController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T10:44:53.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Internship\\WebApiEFCore\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T09:09:57.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Internship\\WebApiEFCore\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-28T09:08:49.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ManagerController.cs",
-              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\ManagerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
-              "ToolTip": "D:\\Internship\\WebApiEFCore\\Controllers\\ManagerController.cs",
-              "RelativeToolTip": "Controllers\\ManagerController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA8wCYAAAAxAAAAAAAAAA==",
+              "Title": "Manager.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Models\\Manager.cs",
+              "RelativeDocumentMoniker": "Models\\Manager.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Models\\Manager.cs",
+              "RelativeToolTip": "Models\\Manager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T09:01:37.382Z",
+              "WhenOpened": "2025-04-29T07:11:10.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "EmployeeProject.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Models\\EmployeeProject.cs",
+              "RelativeDocumentMoniker": "Models\\EmployeeProject.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Models\\EmployeeProject.cs",
+              "RelativeToolTip": "Models\\EmployeeProject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:11:21.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "Models\\Employee.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Models\\Employee.cs",
+              "RelativeToolTip": "Models\\Employee.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwBIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T08:56:54.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
@@ -126,12 +155,24 @@
               "RelativeToolTip": "Data\\AppDbContext.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAxwA0AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T08:51:41.678Z",
+              "WhenOpened": "2025-04-28T08:51:41.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "Models\\Project.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Models\\Project.cs",
+              "RelativeToolTip": "Models\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T07:11:13.747Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "20250428092843_SecondChanges.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Migrations\\20250428092843_SecondChanges.cs",
               "RelativeDocumentMoniker": "Migrations\\20250428092843_SecondChanges.cs",
@@ -139,38 +180,74 @@
               "RelativeToolTip": "Migrations\\20250428092843_SecondChanges.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T09:28:43.956Z",
+              "WhenOpened": "2025-04-28T09:28:43.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ManagerController.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "Controllers\\ManagerController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAYwBwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T09:01:37.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
               "ToolTip": "D:\\Internship\\WebApiEFCore\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAmwDUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAiwDkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-28T08:57:49.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProjectController.cs",
-              "ToolTip": "D:\\Internship\\WebApiEFCore\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "Controllers\\ProjectController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-28T09:08:49.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwBwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T10:11:05.786Z",
+              "WhenOpened": "2025-04-28T09:09:57.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\Internship\\WebApiEFCore\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-04-28T16:54:55.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "20250428091820_OneToManyBetweenEmpAndManager.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Migrations\\20250428091820_OneToManyBetweenEmpAndManager.cs",
               "RelativeDocumentMoniker": "Migrations\\20250428091820_OneToManyBetweenEmpAndManager.cs",
@@ -178,25 +255,11 @@
               "RelativeToolTip": "Migrations\\20250428091820_OneToManyBetweenEmpAndManager.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwCYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T09:18:20.973Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T09:18:20.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Models\\Employee.cs",
-              "RelativeDocumentMoniker": "Models\\Employee.cs",
-              "ToolTip": "D:\\Internship\\WebApiEFCore\\Models\\Employee.cs",
-              "RelativeToolTip": "Models\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T08:56:54.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
@@ -204,12 +267,11 @@
               "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T09:18:54.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T09:18:54.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "20250428092520_SecondChanges.cs",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\Migrations\\20250428092520_SecondChanges.cs",
               "RelativeDocumentMoniker": "Migrations\\20250428092520_SecondChanges.cs",
@@ -217,21 +279,19 @@
               "RelativeToolTip": "Migrations\\20250428092520_SecondChanges.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T09:25:20.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T09:25:20.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "WebApiEFCore",
+              "DocumentIndex": 16,
+              "Title": "WebApiEFCore.csproj",
               "DocumentMoniker": "D:\\Internship\\WebApiEFCore\\WebApiEFCore.csproj",
               "RelativeDocumentMoniker": "WebApiEFCore.csproj",
               "ToolTip": "D:\\Internship\\WebApiEFCore\\WebApiEFCore.csproj",
               "RelativeToolTip": "WebApiEFCore.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-28T08:51:12.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-28T08:51:12.324Z"
             }
           ]
         }

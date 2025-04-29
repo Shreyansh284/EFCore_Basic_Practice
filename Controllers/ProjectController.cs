@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiEFCore.Data;
 using WebApiInEfCore.Models;
 
 namespace WebApiEFCore.Controllers
 {
+    [ApiController]
     public class ProjectController : Controller
     {
 
@@ -15,37 +17,47 @@ namespace WebApiEFCore.Controllers
         }
 
         [HttpGet("ProjectDetail")] // Only this needed
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var emp = context.Projects.ToList();
+            
+            var emp = await context.Projects.Select(e => new
+            {
+                e.ProjectId,
+                e.ProjectName,
+                
+                Employee = e.EmployeeProjects.Select(ep => new {
+                    ep.Employee.EmployeeId,
+                    ep.Employee.EmployeeName
+                })
+            }).ToListAsync();
             return Ok(emp);
         }
 
         [HttpPost("AddProject")]
 
-        public IActionResult Add(Project project)
+        public async Task<IActionResult> Add([FromBody] Project project)
         {
        
-            context.Add(project);
-            context.SaveChanges();
+            await context.AddAsync(project);
+            await context.SaveChangesAsync();
             return Ok();
         }
 
 
-        [HttpPatch("EditProject")]
-        public IActionResult Edit(Project projectDetail)
+        [HttpPatch("EditProject/{projectId}")]
+        public async Task<IActionResult> Edit([FromRoute] int projectId,[FromBody] Project projectDetail)
         {
-            var project = context.Projects.Single(e => e.ProjectId == projectDetail.ProjectId);
+            var project = await context.Projects.FindAsync(projectId);
             project.ProjectName = projectDetail.ProjectName;
-            context.SaveChanges();
+            await context.SaveChangesAsync();
             return Ok();
         }
         [HttpDelete("DeleteProject/{projectId}")]
-        public IActionResult Delete(int projectId)
+        public async Task<IActionResult> Delete(int projectId)
         {
-            var project = context.Projects.Single(e => e.ProjectId == projectId);
+            var project =await context.Projects.FindAsync(projectId);
             context.Remove(project);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
             return Ok();
         }
     }

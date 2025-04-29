@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiEFCore.Data;
 using WebApiInEfCore.Models;
 
 namespace WebApiEFCore.Controllers
 {
+    [ApiController]
     public class ManagerController : Controller 
     {
         private readonly AppDbContext context;
@@ -14,34 +16,43 @@ namespace WebApiEFCore.Controllers
         }
 
         [HttpGet("ManagerDetail")] // Only this needed
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var emp = context.Managers.ToList();
+            var emp = await context.Managers
+                .Select(e => new
+            {
+                e.ManagerId,
+                e.ManagerName,
+                Employees = e.Employees.Select(ep => new {
+                    ep.EmployeeId,
+                    ep.EmployeeName
+                              })    
+            }).ToListAsync();
             return Ok(emp);
         }
 
         [HttpPost("AddManager")]
 
-        public IActionResult Add(Manager manager)
+        public async Task<IActionResult> Add([FromBody] Manager manager)
         {
-            context.Add(manager);
-            context.SaveChanges();
+            await context.AddAsync(manager);
+            await context.SaveChangesAsync();
             return Ok();
         }
-        [HttpPatch("EditManager")]
-        public IActionResult Edit(Manager managerDetail)
+        [HttpPatch("EditManager/{managerId}")]
+        public async Task<IActionResult> Edit([FromBody]Manager managerDetail, [FromRoute] int managerId)
         {
-            var manager = context.Managers.Single(e => e.ManagerId == managerDetail.ManagerId);
+            var manager = await context.Managers.FindAsync(managerId);
             manager.ManagerName = managerDetail.ManagerName;
-            context.SaveChanges();
+           await context.SaveChangesAsync();
             return Ok();
         }
         [HttpDelete("DeleteManager/{managerId}")]
-        public IActionResult Delete(int managerId)
+        public async Task<IActionResult> Delete(int managerId)
         {
-            var manager = context.Managers.Single(e => e.ManagerId == managerId);
+            var manager = await context.Managers.FindAsync(managerId);
             context.Remove(manager);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
             return Ok();
         }
         }

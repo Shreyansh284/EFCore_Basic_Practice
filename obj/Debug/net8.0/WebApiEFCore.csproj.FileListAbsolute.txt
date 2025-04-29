@@ -170,3 +170,4 @@ D:\Internship\WebApiEFCore\obj\Debug\net8.0\refint\WebApiEFCore.dll
 D:\Internship\WebApiEFCore\obj\Debug\net8.0\WebApiEFCore.pdb
 D:\Internship\WebApiEFCore\obj\Debug\net8.0\WebApiEFCore.genruntimeconfig.cache
 D:\Internship\WebApiEFCore\obj\Debug\net8.0\ref\WebApiEFCore.dll
+D:\Internship\WebApiEFCore\obj\Debug\net8.0\WebApiEFCore.sourcelink.json

@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebApiEFCore.Data;
 using WebApiInEfCore.Models;
 
 namespace WebApiEFCore.Controllers
 {
+    [ApiController]
     public class EmployeeController : Controller
     {
         private readonly AppDbContext context;
@@ -14,58 +17,49 @@ namespace WebApiEFCore.Controllers
         }
 
         [HttpGet("EmployeeDetail")] // Only this needed
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var emp = context.Employees
-    .Join(context.Managers,
-        e => e.ManagerId,
-        m => m.ManagerId,
-        (e, m) => new { e.EmployeeId, e.EmployeeName, ManagerName = m.ManagerName })
-    .Join(context.EmployeeProjects,
-        em => em.EmployeeId,
-        ep => ep.EmployeeId,
-        (em, ep) => new { em.EmployeeName, em.ManagerName, ep.ProjectId })
-    .Join(context.Projects,
-        empEp => empEp.ProjectId,
-        p => p.ProjectId,
-        (empEp, p) => new
-        {
-            EmployeeName = empEp.EmployeeName,
-            ManagerName = empEp.ManagerName,
-            ProjectName = p.ProjectName
-        })
-    .ToList();
+            
+            var emp = 
+                   await context.Employees
+                                .Select(e => new
+                                {
+                                        e.EmployeeId,   
+                                        e.EmployeeName,
+                                        ManagerName = e.Manager.ManagerName,
+                                        Projects = e.EmployeeProjects.Select(ep => new {
+                                        ep.Project.ProjectId,
+                                        ep.Project.ProjectName
+                                })
+                    })
+                    .ToListAsync();
             return Ok(emp);
         }
 
         [HttpPost("AddEmployee")]
 
-        public IActionResult Add(Employee employee)
+        public async Task<IActionResult> Add(Employee employee)
         {
-            //var employee = new Employee();
-            //employee.EmployeeName = "Xemp";
-            //employee.ManagerId = 1;
-         
-
-            context.Add(employee);
-            context.SaveChanges();
+            await context.AddAsync(employee);
+            await context.SaveChangesAsync();
             return Ok();
         }
-        [HttpPatch("EditEmployee")]
-        public IActionResult Edit(Employee employeeDetail)
+        [HttpPatch("EditEmployee/{employeeId}")]
+        public async Task<IActionResult> Edit([FromRoute]int employeeId,[FromBody] Employee employeeDetail)
         {
-            var employee = context.Employees.Single(e=>e.EmployeeId== employeeDetail.EmployeeId);
+            var employee =await context.Employees.FindAsync(employeeId);
             employee.EmployeeName = employeeDetail.EmployeeName;
-            context.SaveChanges();
+            employee.ManagerId = employeeDetail.ManagerId;
+            await context.SaveChangesAsync();
             return Ok();
 
         }
         [HttpDelete("DeleteEmployee/{employeeId}")]
-        public IActionResult Delete(int employeeId)
-        {
-            var employee = context.Employees.Single(e => e.EmployeeId == employeeId);
-            context.Remove(employee);
-            context.SaveChanges();
+        public async Task<IActionResult> Delete(int employeeId)
+        {   
+            var employee = await context.Employees.FindAsync(employeeId);
+             context.Remove(employee);
+           await context.SaveChangesAsync();
             return Ok();
         }
     }
